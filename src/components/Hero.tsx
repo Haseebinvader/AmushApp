@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { company } from "@/content/site";
 import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
@@ -7,15 +6,17 @@ export default function Hero() {
   useRevealOnScroll();
   return (
     <section className="relative min-h-[100vh] flex items-center" id="home">
-      {/* Background Video (now mobile-friendly) */}
       <video
         src="/herobgvideo.mp4"
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        className="absolute inset-0 w-full h-full object-cover object-center blur-xs md:blur-sm"
       />
+
+      {/* Contrast overlay above video */}
+      <div aria-hidden className="absolute inset-0 bg-black/40 -z-10" />
 
       {/* Floating gradient circles */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">

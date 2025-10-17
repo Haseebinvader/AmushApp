@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { nav, company } from "@/content/site";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import Image from "next/image";
 // Using a plain img for the small logo to avoid any loader issues
 
 export default function Header() {
@@ -13,10 +14,10 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 font-semibold text-[var(--brand-900)]">
           <span className="relative inline-block h-12 md:h-14 w-12 md:w-14 overflow-visible">
-            <img src="/amushlogo1.png" alt="Aumsh Ventures" className="absolute inset-0 h-full w-full object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.15)] scale-[1.6] origin-left" />
+            <Image src="/amushlogo1.png" alt="Aumsh Ventures" className="absolute inset-0 h-full w-full object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.15)] scale-[1.6] origin-left" width={50} height={50}/>
           </span>
           <span>{company.name}</span>
-        </a>
+        </a> 
         <nav className="hidden md:flex items-center gap-6">
           {nav.map((item) => (
             <a

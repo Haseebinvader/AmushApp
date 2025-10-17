@@ -4,7 +4,7 @@ import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
 export default function Gallery() {
   useRevealOnScroll();
-  const imgs = ["/gallery/Exhibition.jpg", "/gallery/liveevent.jpg", "/gallery/esportstage.jpg", "/gallery/ledwall.jpg", "/gallery/droneshow.jpg"];
+  const imgs = ["/gallery/Exhibition.webp", "/gallery/liveevent.webp", "/gallery/esportstage.webp", "/gallery/ledwall.webp", "/gallery/droneshow.webp", "/gallery/exhibition2.webp"];
   return (
     <section id="gallery" className="py-20 md:py-28 bg-[var(--background)]">
       <div className="max-w-6xl mx-auto px-4">
@@ -18,8 +18,9 @@ export default function Gallery() {
           {imgs.map((src, i) => (
             <div
               key={src}
-              className={`relative overflow-hidden rounded-xl reveal aspect-[16/9] ${i === 0 ? "col-span-4 md:col-span-6" : "col-span-2 md:col-span-3"
-                }`}
+              className={`relative overflow-hidden rounded-xl reveal aspect-[16/9] col-span-2 md:col-span-3`}
+              // ${i === 0 ? "col-span-4 md:col-span-6" : "col-span-2 md:col-span-3"
+              // }
             >
               <Image
                 src={src}

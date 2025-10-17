@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Preloader() {
@@ -13,10 +14,12 @@ export default function Preloader() {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black">
-      <img
+      <Image
         src="/amushlogo1.png"
         alt="Aumsh Ventures"
         className="w-48 h-48 md:w-100 md:h-100 object-contain animate-pulse"
+        width={200}
+        height={200}
       />
     </div>
   );
