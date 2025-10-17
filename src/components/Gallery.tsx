@@ -4,7 +4,7 @@ import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
 export default function Gallery() {
   useRevealOnScroll();
-  const imgs = ["/gallery/one.svg", "/gallery/two.svg", "/gallery/three.svg", "/gallery/four.svg", "/gallery/five.svg"];
+  const imgs = ["/gallery/Exhibition.jpg", "/gallery/liveevent.jpg", "/gallery/esportstage.jpg", "/gallery/ledwall.jpg", "/gallery/droneshow.jpg"];
   return (
     <section id="gallery" className="py-20 md:py-28 bg-[var(--background)]">
       <div className="max-w-6xl mx-auto px-4">
@@ -14,10 +14,19 @@ export default function Gallery() {
             <p className="mt-3 text-[var(--muted-700)]">A glimpse of our recent work.</p>
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="mt-8 grid grid-cols-4 md:grid-cols-6 gap-3">
           {imgs.map((src, i) => (
-            <div key={src} className={`relative aspect-[4/3] overflow-hidden rounded-xl reveal ${i === 0 ? "col-span-2" : ""}`}>
-              <Image src={src} alt="Gallery image" fill className="object-cover scale-[1.02] transition-transform duration-500 group-hover:scale-105" />
+            <div
+              key={src}
+              className={`relative overflow-hidden rounded-xl reveal aspect-[16/9] ${i === 0 ? "col-span-4 md:col-span-6" : "col-span-2 md:col-span-3"
+                }`}
+            >
+              <Image
+                src={src}
+                alt="Gallery image"
+                fill
+                className="object-cover scale-[1.02] transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
           ))}
         </div>
