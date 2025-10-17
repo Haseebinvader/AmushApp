@@ -13,9 +13,11 @@ export default function Preloader() {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black">
-      <img src="/amushlogo1.png" alt="Amush Ventures" className="h-100 w-200 md:h-100 animate-pulse" />
+      <img
+        src="/amushlogo1.png"
+        alt="Aumsh Ventures"
+        className="w-48 h-48 md:w-100 md:h-100 object-contain animate-pulse"
+      />
     </div>
   );
 }
-
-

@@ -13,7 +13,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 font-semibold text-[var(--brand-900)]">
           <span className="relative inline-block h-12 md:h-14 w-12 md:w-14 overflow-visible">
-            <img src="/amushlogo1.png" alt="Amush Ventures" className="absolute inset-0 h-full w-full object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.15)] scale-[1.6] origin-left" />
+            <img src="/amushlogo1.png" alt="Aumsh Ventures" className="absolute inset-0 h-full w-full object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.15)] scale-[1.6] origin-left" />
           </span>
           <span>{company.name}</span>
         </a>

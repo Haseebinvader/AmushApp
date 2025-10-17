@@ -1,5 +1,5 @@
 export const company = {
-  name: "Amush Ventures",
+  name: "Aumsh Ventures",
   tagline: "Immersive experiences that connect brands and audiences",
   shortDescription:
     "We design and deliver world-class exhibitions, events, and technology-powered activations across industries.",
@@ -53,9 +53,9 @@ export const services = [
 ];
 
 export const contact = {
-  email: "hello@amush-events.com",
-  phone: "+1 (555) 123-4567",
-  address: "120 Market Street, Suite 400, San Francisco, CA 94105",
+  email: "Info@aumsh.com",
+  phone: "+971 55 944 8903",
+  address: "Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E",
 };
 
 export const nav = [
