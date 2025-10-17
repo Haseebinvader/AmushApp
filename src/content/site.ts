@@ -33,7 +33,7 @@ export const services = [
     id: "esports",
     title: "eSports",
     description:
-      "Tournament staging, live broadcast support, and interactive fan zones.",
+      "Tournament staging, grandstands,live broadcast support, and interactive fan zones.",
     icon: "/icons/esports.svg",
   },
   {

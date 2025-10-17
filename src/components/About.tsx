@@ -16,6 +16,7 @@ export default function About() {
         <div className="grid grid-cols-2 gap-4">
           {[
             { t: "Exhibition Design", d: "From concept to build, optimized for impact." },
+            { t: "eSports Staging", d: "Tournament staging, grandstands, live broadcast support, and more" },
             { t: "Event Production", d: "Production management with precision." },
             { t: "Interactive Tech", d: "AR/VR, LED, and engagement tools." },
             { t: "Aerial Media", d: "Drone shows and cinematic capture." },
