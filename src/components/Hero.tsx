@@ -6,7 +6,7 @@ import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 export default function Hero() {
   useRevealOnScroll();
   return (
-    <section className="relative min-h-[88vh] flex items-center" id="home">
+    <section className="relative min-h-[100vh] flex items-center" id="home">
       {/* Background Video (now mobile-friendly) */}
       <video
         src="/herobgvideo.mp4"
