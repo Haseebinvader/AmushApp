@@ -17,9 +17,9 @@ export default function Preloader() {
       <Image
         src="/amushlogo1.png"
         alt="Aumsh Ventures"
-        className="w-48 h-48 md:w-100 md:h-100 object-contain animate-pulse"
-        width={200}
-        height={200}
+        className="w-200 h-200 md:w-200 md:h-200 object-contain animate-pulse"
+        width={100}
+        height={100}
       />
     </div>
   );
