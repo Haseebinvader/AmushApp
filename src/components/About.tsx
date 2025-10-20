@@ -15,17 +15,19 @@ export default function About() {
         </div>
         <div className="grid grid-cols-2 gap-4">
           {[
-            { t: "Exhibition Design", d: "From concept to build, optimized for impact." },
-            { t: "eSports Staging", d: "Tournament staging, grandstands, live broadcast support, and more" },
-            { t: "Event Production", d: "Production management with precision." },
-            { t: "Interactive Tech", d: "AR/VR, LED, and engagement tools." },
-            { t: "Aerial Media", d: "Drone shows and cinematic capture." },
-          ].map((item) => (
-            <div key={item.t} className="cursor-pointer rounded-xl bg-[#111111] border border-[var(--border-muted)] p-6 reveal transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-              <p className="font-semibold text-white">{item.t}</p>
-              <p className="text-sm text-[var(--muted-700)] mt-2">{item.d}</p>
-            </div>
-          ))}
+            { t: "Exhibition Design", d: "From creative concept to final build, delivering immersive spaces that inspire audiences." },
+            { t: "eSports Staging", d: "Complete tournament setups with staging, seating, lighting, and live broadcast integration." },
+            { t: "Event Production", d: "Comprehensive event planning and execution with technical precision and seamless delivery." },
+            { t: "Interactive Tech", d: "Innovative AR, VR, and LED experiences designed to engage, entertain, and captivate visitors." },
+            { t: "Aerial Media", d: "Dynamic drone shows and cinematic aerial footage that enhance your storytelling and visuals." },
+            { t: "Fit-out and Kiosks", d: "Tailored booths, kiosks, and pavilions crafted to elevate brand presence at any exhibition." }
+          ]
+            .map((item) => (
+              <div key={item.t} className="cursor-pointer rounded-xl bg-[#111111] border border-[var(--border-muted)] p-6 reveal transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+                <p className="font-semibold text-white">{item.t}</p>
+                <p className="text-sm text-[var(--muted-700)] mt-2">{item.d}</p>
+              </div>
+            ))}
         </div>
       </div>
     </section>
