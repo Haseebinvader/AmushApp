@@ -8,7 +8,7 @@ export default function About() {
     <section id="about" className="py-20 md:py-28 bg-[var(--section-alt)]">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
         <div className="reveal">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">About Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--brand-900)]">About Us</h2>
           <p className="mt-4 text-[var(--muted-700)] text-lg leading-8">
             {company.shortDescription} We combine creativity with technology to craft seamless experiences for brands across exhibitions, live events, and digital activations.
           </p>
@@ -23,8 +23,8 @@ export default function About() {
             { t: "Fit-out and Kiosks", d: "Tailored booths, kiosks, and pavilions crafted to elevate brand presence at any exhibition." }
           ]
             .map((item) => (
-              <div key={item.t} className="cursor-pointer rounded-xl bg-[#111111] border border-[var(--border-muted)] p-6 reveal transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-                <p className="font-semibold text-white">{item.t}</p>
+              <div key={item.t} className="cursor-pointer rounded-xl bg-[var(--brand-50)] border border-[var(--border-muted)] p-6 reveal transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+                <p className="font-semibold text-[var(--brand-900)]">{item.t}</p>
                 <p className="text-sm text-[var(--muted-700)] mt-2">{item.d}</p>
               </div>
             ))}

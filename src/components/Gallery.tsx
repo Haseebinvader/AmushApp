@@ -10,7 +10,7 @@ export default function Gallery() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">Gallery</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--brand-900)]">Gallery</h2>
             <p className="mt-3 text-[var(--muted-700)]">A glimpse of our recent work.</p>
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} {company.name}. All rights reserved.</p>
         <div className="flex items-center gap-4">
           {nav.map((item) => (
-            <a key={item.href} href={item.href} className="hover:text-white transition-colors">
+            <a key={item.href} href={item.href} className="hover:text-[var(--brand-900)] transition-colors">
               {item.label}
             </a>
           ))}
