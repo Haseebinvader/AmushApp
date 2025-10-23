@@ -15,7 +15,7 @@ export default function Gallery() {
           </div>
         </div>
         <div className="mt-8 grid grid-cols-4 md:grid-cols-6 gap-3">
-          {imgs.map((src, i) => (
+          {imgs.map((src) => (
             <div
               key={src}
               className={`relative overflow-hidden rounded-xl reveal aspect-[16/9] col-span-2 md:col-span-3`}

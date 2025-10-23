@@ -3,13 +3,6 @@ import { useState } from "react";
 import { nav, company } from "@/content/site";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import Image from "next/image";
-// Using a plain img for the small logo to avoid any loader issues
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
 import { Sun, Moon } from "lucide-react"
 import { useTheme } from "next-themes"

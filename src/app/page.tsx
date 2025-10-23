@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Clients from "@/components/Clients";
+// import Clients from "@/components/Clients";
 import Gallery from "@/components/Gallery";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
