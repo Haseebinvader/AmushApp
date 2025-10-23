@@ -37,13 +37,13 @@ export default function Hero() {
           <div className="mt-8 flex gap-3">
             <a
               href="#services"
-              className="inline-flex items-center rounded-md bg-[var(--brand-700)] text-[var(--background)] px-5 py-3 text-sm font-medium hover:bg-[var(--brand-600)] transition-colors"
+              className="inline-flex items-center rounded-md bg-[var(--brand-700)] text-white dark:text-[var(--background)] px-5 py-3 text-sm font-medium hover:bg-[var(--brand-600)] transition-colors"
             >
               Explore Services
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center rounded-md border border-[var(--brand-900)]/40 text-[var(--brand-900)] px-5 py-3 text-sm font-medium hover:bg-[var(--brand-900)]/10 transition-colors"
+              className="inline-flex items-center rounded-md border border-white/40 text-white px-5 py-3 text-sm font-medium hover:bg-white/10 transition-colors"
             >
               Get in Touch
             </a>

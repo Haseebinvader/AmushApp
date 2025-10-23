@@ -23,11 +23,11 @@
   --brand-700: #000000; /* used carefully for accents */
   --brand-600: #2b2b2b;
   --brand-300: #5c5c5c;
-  --brand-50: #f5f5f5;  /* subtle light card */
+  --brand-50: #f8f9fa;  /* subtle light card */
   --gray-900: #050505;
-  --muted-700: #363636;
-  --border-muted: #d4d4d4;
-  --section-alt: #f5f5f5;
+  --muted-700: #6b7280; /* better contrast for light mode */
+  --border-muted: #e5e7eb; /* lighter border for light mode */
+  --section-alt: #f8f9fa; /* very light gray */
 }
 
 @theme inline {
