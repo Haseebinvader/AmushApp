@@ -4,7 +4,7 @@ import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
 export default function Gallery() {
   useRevealOnScroll();
-  const imgs = ["/gallery/Exhibition.jpg", "/gallery/liveevent.jpg", "/gallery/esportstage.webp", "/gallery/ledwall.webp", "/gallery/droneshow.webp", "/gallery/exhibition2.webp"];
+  const imgs = ["/gallery/gal1.jpeg", "/gallery/gal2.jpeg", "/gallery/gal3.jpeg", "/gallery/gal4.jpeg", "/gallery/gal5.jpeg", "/gallery/gal6.jpeg", "/gallery/gal7.jpeg", "/gallery/gal8.jpeg", "/gallery/gal9.jpeg", "/gallery/gal10.jpeg"];
   return (
     <section id="gallery" className="py-20 md:py-28 bg-[var(--background)]">
       <div className="max-w-6xl mx-auto px-4">

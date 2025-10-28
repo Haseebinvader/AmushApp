@@ -8,6 +8,7 @@ import Gallery from "@/components/Gallery";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import TestimonialsSection from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Services />
         {/* <Clients /> */}
+        <TestimonialsSection />
         <Gallery />
         <CTA />
         <Contact />
