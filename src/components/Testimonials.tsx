@@ -64,6 +64,9 @@ export default function Testimonials() {
                 <p className="text-sm text-gray-400 dark:text-[var(--brand-700)]">
                   {t.title}
                 </p>
+                <p className="text-sm text-gray-400 dark:text-[var(--brand-700)]">
+                  {t.company}
+                </p>
               </div>
               <div className="flex justify-left mt-4">
                 {[...Array(5)].map((_, idx) => (
