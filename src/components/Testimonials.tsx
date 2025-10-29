@@ -9,24 +9,24 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      content: `This letter serves as a reference to Aumsh Ventures that they have been our preferred vendor and have delivered utmost professional service and utmost quality stands on time. Some of the references for stands done for us by them are ARAB BANK, PHILIPS, EQUATE, and SLNEE. We recommend this vendor to anyone trying to have a professional relationship with a great service and a dedicated team who delivers quality projects.`,
+      content: `Aumsh Ventures has been our preferred vendor, consistently delivering top-quality stands with exceptional professionalism and timeliness. Their dedicated team ensures every project is executed flawlessly, making them a trusted partner for anyone seeking reliable, high-quality service.`,
       author: "Mr. Firas Soweid",
       title: "Managing Director",
-    //   company: "Talents Flow DMCC",
+      company: "Talent Flow DMCC",
     },
     {
       id: 2,
-      content: `I am writing to express my sincere appreciation for the exceptional work the team at Aumsh Ventures has provided since our partnership began in 2015. Over the years, its dedication, professionalism, and innovative approach have helped us achieve remarkable results. In particular, I would like to highlight their outstanding contribution during the Levi's Pavilion at Sole DXB 2019-20. Their ability to capture Levi's brand essence while delivering an unforgettable experience truly set the pavilion apart.`,
-      author: "Akshaya Singh Chaanano",
-      title: "Director – PR",
-    //   company: "DLF Shopping Mall",
+      content: `Aumsh Ventures has been an exceptional partner since 2015. Their professionalism, creativity, and innovative approach consistently deliver remarkable results. Their work on the Levi’s Pavilion at Sole DXB truly stood out — perfectly capturing the brand’s essence and creating an unforgettable experience.`,
+      author: "Akshaya Singh Chauhan",
+      title: "Director",
+      company: "Cranberry",
     },
     {
       id: 3,
-      content: `This letter serves as a professional reference for Aumsh Ventures who successfully completed major projects with us, including KMW + NEXTER - IDEX Abu Dhabi, Russian Pavilion - Expo 2020, Gabon Pavilion - Expo 2020, and EWC World Cup Riyadh 2022 & 2024. Their professionalism, dedication, and commitment to high-quality results exceeded expectations. We highly recommend Aumsh Ventures for their exceptional performance, work ethic, and value-added services.`,
+      content: `Aumsh Ventures has consistently exceeded our expectations through their professionalism, dedication, and attention to detail. From the Expo 2020 pavilions to the EWC World Cup in Riyadh, their flawless execution and commitment to excellence make them a trusted partner we highly recommend.`,
       author: "Petr Krejci",
       title: "CEO",
-    //   company: "EXPone Exponex s.r.o.",
+      company: "Exponex s.r.o.",
     },
   ];
 
