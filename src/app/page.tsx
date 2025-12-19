@@ -9,6 +9,7 @@ import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/Testimonials";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <main id="home" className="scroll-smooth">
         <Hero />
+        <VideoSection />
         <About />
         <Services />
         {/* <Clients /> */}
