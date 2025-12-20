@@ -15,7 +15,7 @@ export default function Preloader() {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black">
       <Image
-        src="/amushlogoapp.png"
+        src="/amushlogos.png"
         alt="Aumsh Ventures"
         className="w-200 h-200 md:w-200 md:h-200 object-contain animate-pulse"
         width={100}
