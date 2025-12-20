@@ -1,7 +1,6 @@
 "use client";
 import { company } from "@/content/site";
 import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
-import Image from "next/image";
 
 export default function Hero() {
   useRevealOnScroll();
