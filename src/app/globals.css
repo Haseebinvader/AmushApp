@@ -14,6 +14,32 @@
   --border-muted: #232323;
   --section-alt: #0e0e0e;
 }
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-20px) rotate(1deg); }
+  66% { transform: translateY(10px) rotate(-1deg); }
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translate(-50%, 0); opacity: 1; }
+  50% { transform: translate(-50%, 8px); opacity: 0.5; }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2s ease-in-out infinite;
+}
 
 .light {
   --background: #ffffff; /* white */

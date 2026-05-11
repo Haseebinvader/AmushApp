@@ -31,7 +31,7 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <Button 
+        {/* <Button 
           variant="outline" 
           size="icon"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -43,7 +43,7 @@ export default function Header() {
         </Button>
         <button aria-label="Toggle menu" className="md:hidden inline-flex items-center justify-center rounded-md border border-[var(--border-muted)] px-3 py-2 text-white" onClick={() => setMobileOpen((v) => !v)}>
           <span className="block w-5 h-[2px] bg-white" />
-        </button>
+        </button> */}
       </div>
       {mobileOpen && (
         <div className="md:hidden border-t border-[var(--border-muted)] bg-[var(--section-alt)]">
