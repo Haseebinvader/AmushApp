@@ -54,7 +54,7 @@ export default function Services() {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Card */}
-              <div className="relative h-full rounded-2xl border border-[var(--border-muted)] bg-gray-600 dark:bg-gradient-to-br from-[var(--brand-50)] to-transparent p-6 md:p-8 transition-all duration-500 ease-out
+              <div className="relative h-full rounded-2xl border border-[var(--border-muted)] bg-black dark:bg-[#111] p-6 md:p-8 transition-all duration-500 ease-out
                 hover:border-[var(--brand-300)] hover:shadow-2xl hover:shadow-[var(--brand-100)] dark:hover:shadow-[var(--brand-900)]/20
                 hover:-translate-y-2"
               >
