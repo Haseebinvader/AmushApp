@@ -18,7 +18,6 @@ export default function Gallery() {
     { src: "/gallery/gal2.jpeg", span: "col-span-2" },
     { src: "/gallery/gal3.jpeg", span: "" },
     { src: "/gallery/gal4.jpeg", span: "" },
-    { src: "/gallery/gal5.jpeg", span: "row-span-2 col-span-2" },
     { src: "/gallery/imagecons.png", span: "" },
     { src: "/gallery/imgcons2.png", span: "" },
     { src: "/gallery/gal8.jpeg", span: "col-span-2" },
@@ -107,9 +106,8 @@ export default function Gallery() {
                 alt={`Gallery image ${index + 1}`}
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"
-                className={`object-cover transition-all duration-700 group-hover:scale-105 ${
-                  loadedImages.has(index) ? "opacity-100" : "opacity-0"
-                }`}
+                className={`object-cover transition-all duration-700 group-hover:scale-105 ${loadedImages.has(index) ? "opacity-100" : "opacity-0"
+                  }`}
                 onLoad={() => handleImageLoad(index)}
               />
               {/* Hover overlay */}
