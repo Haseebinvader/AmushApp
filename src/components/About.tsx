@@ -22,7 +22,7 @@ import {
 const stats = [
   { value: "500+", label: "Projects Delivered", icon: Zap },
   { value: "15+", label: "Years Experience", icon: Award },
-  { value: "20+", label: "Countries Served", icon: Globe },
+  { value: "10+", label: "Countries Served", icon: Globe },
   { value: "200+", label: "Happy Clients", icon: Users },
 ];
 
