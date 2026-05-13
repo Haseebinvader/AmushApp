@@ -77,7 +77,7 @@ export default function Contact() {
               {contactDetails.map((item) => (
                 <div
                   key={item.label}
-                  className={`group relative p-5 rounded-xl border border-[var(--border-muted)] bg-white dark:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:border-[var(--brand-300)] hover:-translate-y-1`}
+                  className={`group relative p-5 rounded-xl border border-[var(--border-muted)]  dark:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:border-[var(--brand-300)] hover:-translate-y-1`}
                 >
                   {/* Gradient overlay on hover */}
                   <div className={`absolute inset-0 rounded-xl bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
@@ -110,7 +110,7 @@ export default function Contact() {
             </div>
 
             {/* Company Info */}
-            <div className="p-6 rounded-2xl bg-white dark:bg-gray-800 border border-[var(--border-muted)] shadow-sm reveal">
+            <div className="p-6 rounded-2xl dark:bg-gray-800 border border-[var(--border-muted)] shadow-sm reveal">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-[var(--brand-600)] flex items-center justify-center">
                   <Building2 className="w-5 h-5 text-white" />
@@ -160,7 +160,7 @@ export default function Contact() {
                   href="https://maps.google.com/?q=Meydan+Grandstand+Dubai"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 rounded-xl bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-xl transition-all group"
+                  className="flex items-center justify-between p-4 rounded-xl dark:bg-gray-800/95 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-xl transition-all group"
                 >
                   <div>
                     <p className="text-sm font-semibold text-[var(--brand-900)]">

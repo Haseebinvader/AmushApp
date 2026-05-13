@@ -168,13 +168,13 @@ export default function About() {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className="group relative p-6 rounded-2xl bg-white dark:bg-gray-800 border border-[var(--border-muted)] hover:border-[var(--brand-300)] transition-all duration-300 hover:shadow-lg"
+              className="group relative p-6 rounded-2xl dark:bg-gray-800 border border-[var(--border-muted)] hover:border-[var(--brand-300)] transition-all duration-300 hover:shadow-lg"
             >
               <stat.icon className="w-8 h-8 text-[var(--brand-500)] mb-3 group-hover:scale-110 transition-transform" />
               <div className="text-3xl md:text-4xl font-bold text-[var(--brand-900)] mb-1">
                 {counters[index]}+
               </div>
-              <div className="text-sm text-[var(--muted-600)]">{stat.label}</div>
+              <div className="text-sm">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -201,7 +201,7 @@ export default function About() {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className={`group relative p-5 rounded-xl border transition-all duration-300 cursor-pointer reveal bg-white dark:bg-gray-800
+                className={`group relative p-5 rounded-xl border transition-all duration-300 cursor-pointer reveal dark:bg-gray-800
                   `}
                 onMouseEnter={() => setActiveService(index)}
                 onMouseLeave={() => setActiveService(null)}
