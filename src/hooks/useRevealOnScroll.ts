@@ -14,7 +14,13 @@ export function useRevealOnScroll() {
     };
     const io = new IntersectionObserver((entries) => onReveal(entries, io), { rootMargin: "0px 0px -10% 0px", threshold: 0.1 });
     revealables.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+    const fallback = window.setTimeout(() => {
+      revealables.forEach((el) => el.classList.add("show"));
+    }, 1600);
+    return () => {
+      io.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, []);
 }
 
