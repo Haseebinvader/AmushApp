@@ -15,7 +15,7 @@ export default function HomeStory() {
         <div className="reveal lg:col-span-5">
           <div className="group relative aspect-[4/5] overflow-hidden bg-[var(--cream-deep)]">
             <Image
-              src="/gallery/gal8.jpeg"
+              src="/gallery/gal4.jpeg"
               alt="Aumsh studio and production"
               fill
               className="img-zoom object-cover"
