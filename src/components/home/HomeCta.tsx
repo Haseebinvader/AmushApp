@@ -6,7 +6,7 @@ export default function HomeCta() {
       <div className="mx-auto max-w-[900px] text-center">
         <p className="font-serif italic text-[22px] text-white/70">Ready when you are</p>
         <h2 className="mt-4 font-serif text-[44px] leading-[1] tracking-[-0.03em] md:text-[68px]">
-          Let us build the room
+          Let us build the visibility
           <br />
           your brand deserves.
         </h2>
