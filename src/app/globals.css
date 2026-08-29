@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
-/* GIGI color variants: white, sage #EEF1EA, black, plum #451424 */
+/* Dark GIGI palette: warm black, cream type, plum fills, rose accents */
 :root {
-  --sage: #eef1ea;
-  --sage-deep: #e2e6de;
-  --paper: #ffffff;
-  --ink: #000000;
-  --ink-soft: #262626;
-  --muted: #6b6b6b;
-  --line: #dfdfdf;
-  --line-strong: #c8c8c8;
+  --sage: #0c0a0b;
+  --sage-deep: #161213;
+  --paper: #141112;
+  --ink: #f3eee7;
+  --ink-soft: #cfc6bb;
+  --muted: #8f867c;
+  --line: #2c2626;
+  --line-strong: #433b3b;
   --plum: #451424;
-  --plum-soft: #5c1d32;
-  --surface-dark: #0a0a0a;
+  --plum-soft: #8d3a52;
+  --accent: #d9a8b4;
+  --inverse: #0b0a0a;
+  --surface-dark: #080707;
   --cream: var(--sage);
   --cream-deep: var(--sage-deep);
   --background: var(--sage);
@@ -31,6 +33,8 @@
   --color-line: var(--line);
   --color-plum: var(--plum);
   --color-sage: var(--sage);
+  --color-accent: var(--accent);
+  --color-inverse: var(--inverse);
   --font-sans: var(--font-outfit);
   --font-serif: var(--font-cormorant);
 }
@@ -41,6 +45,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
@@ -76,7 +81,7 @@ button {
 }
 
 .accent-italic {
-  color: var(--plum);
+  color: var(--accent);
 }
 
 @keyframes fade-up {

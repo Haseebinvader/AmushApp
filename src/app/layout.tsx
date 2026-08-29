@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#451424",
+  themeColor: "#0c0a0b",
 };
 
 export default function RootLayout({
@@ -43,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${cormorant.variable}`}>
+    <html lang="en" className={`dark ${outfit.variable} ${cormorant.variable}`}>
       <body className="antialiased">
         <Preloader />
         <SiteShell>{children}</SiteShell>

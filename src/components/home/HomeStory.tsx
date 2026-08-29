@@ -10,7 +10,7 @@ export default function HomeStory() {
   useRevealOnScroll();
 
   return (
-    <section className="border-y border-[var(--line)] bg-white px-5 py-16 md:px-10 md:py-24">
+    <section className="border-y border-[var(--line)] bg-[var(--paper)] px-5 py-16 md:px-10 md:py-24">
       <div className="mx-auto grid max-w-[1440px] items-center gap-12 lg:grid-cols-12">
         <div className="reveal lg:col-span-5">
           <div className="group relative aspect-[4/5] overflow-hidden bg-[var(--cream-deep)]">

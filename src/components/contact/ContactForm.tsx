@@ -29,7 +29,7 @@ export default function ContactForm() {
       <div className="flex items-center gap-6">
         <button
           type="submit"
-          className="inline-flex items-center rounded-full bg-[var(--ink)] px-8 py-3.5 text-[11px] font-medium tracking-[0.18em] uppercase text-[var(--cream)] transition-opacity hover:opacity-80"
+          className="inline-flex items-center rounded-full bg-[var(--ink)] px-8 py-3.5 text-[11px] font-medium tracking-[0.18em] uppercase text-[var(--inverse)] transition-opacity hover:opacity-80"
         >
           Send message
         </button>

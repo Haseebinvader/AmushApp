@@ -10,7 +10,7 @@ export default function PageHero({ eyebrow, title, italic, description }: PageHe
     <section className="px-5 pt-40 pb-16 md:px-10 md:pt-48 md:pb-20">
       <div className="mx-auto max-w-[1440px]">
         {eyebrow && (
-          <p className="mb-5 text-[11px] tracking-[0.24em] uppercase text-[var(--plum)]">
+          <p className="mb-5 text-[11px] tracking-[0.24em] uppercase text-[var(--accent)]">
             {eyebrow}
           </p>
         )}
@@ -19,7 +19,7 @@ export default function PageHero({ eyebrow, title, italic, description }: PageHe
           {italic && (
             <>
               <br />
-              <em className="italic font-normal text-[var(--plum)]">{italic}</em>
+              <em className="italic font-normal text-[var(--accent)]">{italic}</em>
             </>
           )}
         </h1>

@@ -68,7 +68,7 @@ export default function MenuOverlay({ open, onClose }: MenuOverlayProps) {
             </nav>
 
             <div className="border-t border-white/15 pt-8 text-sm text-white/55">
-              <p className="font-serif italic text-[22px] text-[var(--plum-soft)]">{company.tagline}</p>
+              <p className="font-serif italic text-[22px] text-[var(--accent)]">{company.tagline}</p>
               <a href={`mailto:${contact.email}`} className="mt-3 block hover:text-white">
                 {contact.email}
               </a>

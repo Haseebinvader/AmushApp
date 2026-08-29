@@ -58,18 +58,18 @@ export default function GalleryGrid() {
 
       {selected !== null && (
         <div
-          className="fixed inset-0 z-[80] flex items-center justify-center bg-[var(--ink)]/92"
+          className="fixed inset-0 z-[80] flex items-center justify-center bg-[var(--surface-dark)]/94"
           onClick={close}
         >
           <button
             type="button"
             onClick={close}
-            className="absolute top-5 right-5 text-[var(--cream)]"
+            className="absolute top-5 right-5 text-[var(--ink)]"
             aria-label="Close"
           >
             <X className="h-6 w-6" />
           </button>
-          <p className="absolute top-6 left-6 text-[12px] tracking-[0.16em] text-[var(--cream)]/70">
+          <p className="absolute top-6 left-6 text-[12px] tracking-[0.16em] text-[var(--ink)]/70">
             {String(selected + 1).padStart(2, "0")} / {String(gallery.length).padStart(2, "0")}
           </p>
           <button
@@ -78,7 +78,7 @@ export default function GalleryGrid() {
               e.stopPropagation();
               prev();
             }}
-            className="absolute left-4 text-[var(--cream)] md:left-8"
+            className="absolute left-4 text-[var(--ink)] md:left-8"
             aria-label="Previous"
           >
             <ChevronLeft className="h-8 w-8" />
@@ -102,7 +102,7 @@ export default function GalleryGrid() {
               e.stopPropagation();
               next();
             }}
-            className="absolute right-4 text-[var(--cream)] md:right-8"
+            className="absolute right-4 text-[var(--ink)] md:right-8"
             aria-label="Next"
           >
             <ChevronRight className="h-8 w-8" />

@@ -12,7 +12,7 @@ export default function HomeCta() {
         </h2>
         <Link
           href="/contact"
-          className="mt-10 inline-flex items-center rounded-full bg-white px-8 py-3.5 text-[11px] font-medium tracking-[0.18em] uppercase text-[var(--ink)] transition-opacity hover:opacity-80"
+          className="mt-10 inline-flex items-center rounded-full bg-[var(--ink)] px-8 py-3.5 text-[11px] font-medium tracking-[0.18em] uppercase text-[var(--inverse)] transition-opacity hover:opacity-80"
         >
           Stay in Touch
         </Link>

@@ -17,7 +17,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[var(--surface-dark)] text-white">
+    <footer className="border-t border-white/10 bg-[var(--surface-dark)] text-white">
       <div className="mx-auto grid max-w-[1440px] gap-14 px-5 py-16 md:grid-cols-12 md:px-10 md:py-20">
         <div className="md:col-span-5">
           <BrandMark size="footer" />

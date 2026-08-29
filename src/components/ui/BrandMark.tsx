@@ -21,7 +21,7 @@ export default function BrandMark({ size = "header", compact = false, className 
   return (
     <span
       className={cn(
-        "relative block overflow-hidden bg-black transition-[width,height,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+        "relative block overflow-hidden bg-black ring-1 ring-white/15 transition-[width,height,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
         frame,
         className
       )}

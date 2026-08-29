@@ -15,7 +15,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Stay in Touch"
         title="Tell us about"
-        italic="the next room."
+        italic="the next project."
         description="We would love to learn about your exhibition, event, or activation."
       />
 
@@ -39,7 +39,7 @@ export default function ContactPage() {
               href={contact.mapLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute bottom-5 left-5 z-10 inline-flex bg-[var(--paper)] px-4 py-2.5 text-[11px] tracking-[0.18em] uppercase text-[var(--ink)] transition-opacity hover:opacity-70"
+              className="absolute bottom-5 left-5 z-10 inline-flex bg-[var(--ink)] px-4 py-2.5 text-[11px] tracking-[0.18em] uppercase text-[var(--inverse)] transition-opacity hover:opacity-70"
             >
               Open in Google Maps
             </a>

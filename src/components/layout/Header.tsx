@@ -67,7 +67,7 @@ export default function Header() {
                 >
                   {item.label}
                   <span
-                    className={`absolute -bottom-2 left-0 h-px bg-[var(--plum)] transition-all duration-300 ${
+                    className={`absolute -bottom-2 left-0 h-px bg-[var(--accent)] transition-all duration-300 ${
                       active ? "w-full" : "w-0"
                     }`}
                   />
@@ -79,7 +79,7 @@ export default function Header() {
           <div className="flex h-[88px] items-center gap-4 md:h-[96px]">
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center rounded-full bg-[var(--ink)] px-5 py-2.5 text-[11px] font-medium tracking-[0.18em] uppercase text-white transition-colors hover:bg-[var(--plum)]"
+              className="hidden sm:inline-flex items-center rounded-full bg-[var(--ink)] px-5 py-2.5 text-[11px] font-medium tracking-[0.18em] uppercase text-[var(--inverse)] transition-colors hover:bg-[var(--plum)] hover:text-[var(--ink)]"
             >
               Start a Project
             </Link>

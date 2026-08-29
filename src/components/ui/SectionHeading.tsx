@@ -28,7 +28,7 @@ export default function SectionHeading({
       >
         {accent ? (
           <>
-            <em className={cn("italic font-normal", dark ? "text-white/70" : "text-[var(--plum)]")}>
+            <em className={cn("italic font-normal", dark ? "text-white/70" : "text-[var(--accent)]")}>
               {accent}
             </em>{" "}
             {title}
