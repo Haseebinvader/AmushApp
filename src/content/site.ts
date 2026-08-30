@@ -163,6 +163,11 @@ export const testimonials = [
 ];
 
 export const gallery = [
+  { src: "/gallery/imeg_1.jpeg", alt: "Baby carousel pavilion", span: "md:col-span-2" },
+  { src: "/gallery/imeg_2.jpeg", alt: "Architectural stand with timber canopy", span: "md:col-span-2" },
+  { src: "/gallery/imeg_3.jpeg", alt: "Aumsh Ventures product booth" },
+  { src: "/gallery/imeg_4.jpeg", alt: "Technical exhibition counter" },
+  { src: "/gallery/imeg_5.jpeg", alt: "Blue and white meeting stand", span: "md:col-span-2" },
   { src: "/gallery/mzLiberec.jpeg", alt: "Exhibition pavilion", span: "md:col-span-2 md:row-span-2" },
   { src: "/gallery/img4.jpeg", alt: "Event environment" },
   { src: "/gallery/IQAIR.jpeg", alt: "IQAir activation" },
@@ -172,11 +177,12 @@ export const gallery = [
   { src: "/gallery/gal3.jpeg", alt: "Product display" },
   { src: "/gallery/gal4.jpeg", alt: "Experience zone" },
   { src: "/gallery/imagecons.png", alt: "Construction fit-out" },
-  { src: "/gallery/imgcons2.png", alt: "On-site build" },
+  { src: "/gallery/imgcons2.png", alt: "On-site build", span: "md:col-span-2" },
   { src: "/gallery/gal8.jpeg", alt: "Night activation", span: "md:col-span-2" },
-  { src: "/gallery/gal9.jpeg", alt: "Audience moment" },
+  // { src: "/gallery/gal9.jpeg", alt: "Audience moment" },
   { src: "/gallery/gal10.jpeg", alt: "Stage lighting" },
   { src: "/gallery/exhibition2.webp", alt: "Exhibition hall" },
+
 ];
 
 export const contact = {
