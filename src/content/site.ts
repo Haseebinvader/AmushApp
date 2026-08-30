@@ -52,7 +52,7 @@ export const services = [
       "Tournament staging, grandstands, live broadcast support, and interactive fan zones.",
     longDescription:
       "Arenas built for play and broadcast. We design competition floors, audience seating, LED environments, and talent areas that feel as sharp on camera as they do in the room.",
-    image: "/gallery/esportstage.webp",
+    image: "/gallery/esportstage.jpg",
     icon: "/icons/esports.svg",
     href: "/services#esports",
   },
@@ -76,7 +76,7 @@ export const services = [
       "Aerial filming, live shows, and operations for indoor and outdoor venues.",
     longDescription:
       "Cinematic capture and choreographed drone performances that extend a brand into the sky — planned, permitted, and executed with operational care.",
-    image: "/gallery/droneshow.webp",
+    image: "/gallery/droneshow.jpg",
     icon: "/icons/drones.svg",
     href: "/services#drones",
   },
