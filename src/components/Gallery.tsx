@@ -21,8 +21,12 @@ export default function Gallery() {
     { src: "/gallery/imagecons.png", span: "" },
     { src: "/gallery/imgcons2.png", span: "" },
     { src: "/gallery/gal8.jpeg", span: "col-span-2" },
-    { src: "/gallery/gal9.jpeg", span: "" },
     { src: "/gallery/gal10.jpeg", span: "" },
+    { src: "/gallery/imeg_1.jpeg", span: "" },
+    { src: "/gallery/imeg_2.jpeg", span: "" },
+    { src: "/gallery/imeg_3.jpeg", span: "" },
+    { src: "/gallery/imeg_4.jpeg", span: "" },
+    { src: "/gallery/imeg_5.jpeg", span: "" },
   ];
 
   const openLightbox = useCallback((index: number) => {
