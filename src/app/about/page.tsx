@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1440px]">
           <div className="relative aspect-[16/9] overflow-hidden bg-[var(--cream-deep)]">
             <Image
-              src="/gallery/exhibition2.webp"
+              src="/gallery/Exhibitions/Exhibition.jpg"
               alt="Aumsh exhibition environment"
               fill
               className="object-cover"

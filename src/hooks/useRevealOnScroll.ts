@@ -1,7 +1,9 @@
 "use client";
 import { useEffect } from "react";
 
-export function useRevealOnScroll() {
+const EMPTY_DEPS: unknown[] = [];
+
+export function useRevealOnScroll(deps: unknown[] = EMPTY_DEPS) {
   useEffect(() => {
     const revealables = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
     const onReveal = (entries: IntersectionObserverEntry[], obs: IntersectionObserver) => {
@@ -21,7 +23,7 @@ export function useRevealOnScroll() {
       io.disconnect();
       window.clearTimeout(fallback);
     };
-  }, []);
+  }, deps);
 }
 
 

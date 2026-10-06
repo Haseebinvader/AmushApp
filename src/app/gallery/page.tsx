@@ -14,7 +14,7 @@ export default function GalleryPage() {
         eyebrow="Work"
         title="Selected"
         italic="rooms & moments."
-        description="A glimpse of recent exhibitions, live productions, and brand environments."
+        description="Work arranged by practice — exhibitions, kiosks, live events, and eSports arenas."
       />
       <section className="px-5 pb-24 md:px-10 md:pb-32">
         <div className="mx-auto max-w-[1440px]">

@@ -28,7 +28,7 @@ export const services = [
       "Custom booths and pavilions that elevate your brand at trade shows, expos, and destination events.",
     longDescription:
       "From first sketch to final build, we design exhibition environments that stop traffic and hold attention. Architecture, lighting, graphics, and visitor flow are treated as one story.",
-    image: "/gallery/Exhibition.jpg",
+    image: "/gallery/Exhibitions/Exhibition.jpg",
     icon: "/icons/exhibitions.svg",
     href: "/services#exhibitions",
   },
@@ -40,7 +40,7 @@ export const services = [
       "End-to-end event production for corporate, cultural, and community experiences.",
     longDescription:
       "We produce gatherings with technical precision and editorial restraint — staging, lighting, content, and show-calling handled as a single production.",
-    image: "/gallery/liveevent.jpg",
+    image: "/gallery/LiveEvents/1122.png",
     icon: "/icons/events.svg",
     href: "/services#events",
   },
@@ -52,7 +52,7 @@ export const services = [
       "Tournament staging, grandstands, live broadcast support, and interactive fan zones.",
     longDescription:
       "Arenas built for play and broadcast. We design competition floors, audience seating, LED environments, and talent areas that feel as sharp on camera as they do in the room.",
-    image: "/gallery/esportstage.jpg",
+    image: "/gallery/ESports/esportstage.jpg",
     icon: "/icons/esports.svg",
     href: "/services#esports",
   },
@@ -64,7 +64,7 @@ export const services = [
       "Interactive installations, AR/VR, LED walls, and real-time engagement tools.",
     longDescription:
       "Technology is never an add-on. We integrate LED, interaction, and real-time content so the experience feels inevitable rather than decorative.",
-    image: "/gallery/ledwall.webp",
+    image: "/gallery/Exhibitions/ledwall.webp",
     icon: "/icons/technology.svg",
     href: "/services#technology",
   },
@@ -76,7 +76,7 @@ export const services = [
       "Aerial filming, live shows, and operations for indoor and outdoor venues.",
     longDescription:
       "Cinematic capture and choreographed drone performances that extend a brand into the sky — planned, permitted, and executed with operational care.",
-    image: "/gallery/droneshow.jpg",
+    image: "/gallery/LiveEvents/droneshow.jpg",
     icon: "/icons/drones.svg",
     href: "/services#drones",
   },
@@ -162,26 +162,94 @@ export const testimonials = [
   },
 ];
 
-export const gallery = [
-  { src: "/gallery/mzLiberec.jpeg", alt: "Exhibition pavilion", span: "md:col-span-2 md:row-span-2" },
-  { src: "/gallery/img4.jpeg", alt: "Event environment" },
-  { src: "/gallery/IQAIR.jpeg", alt: "IQAir activation" },
-  { src: "/gallery/img3.jpeg", alt: "Brand installation" },
-  { src: "/gallery/gal1.jpeg", alt: "Immersive stand", span: "md:row-span-2" },
-  { src: "/gallery/gal2.jpeg", alt: "Exhibition interior", span: "md:col-span-2" },
-  { src: "/gallery/gal3.jpeg", alt: "Product display" },
-  { src: "/gallery/gal4.jpeg", alt: "Experience zone" },
-  { src: "/gallery/imagecons.png", alt: "Construction fit-out" },
-  { src: "/gallery/imgcons2.png", alt: "On-site build", span: "md:col-span-2" },
-  { src: "/gallery/gal8.jpeg", alt: "Night activation", span: "md:col-span-2" },
-  // { src: "/gallery/gal9.jpeg", alt: "Audience moment" },
-  { src: "/gallery/gal10.jpeg", alt: "Stage lighting" },
-  { src: "/gallery/exhibition2.webp", alt: "Exhibition hall" },
-  { src: "/gallery/imeg_1.jpeg", alt: "Baby carousel pavilion", span: "md:col-span-2" },
-  { src: "/gallery/imeg_2.jpeg", alt: "Architectural stand with timber canopy", span: "md:col-span-2" },
-  { src: "/gallery/imeg_3.jpg", alt: "Aumsh Ventures product booth" },
-  { src: "/gallery/imeg_4.jpg", alt: "Technical exhibition counter" },
-  { src: "/gallery/imeg_5.jpg", alt: "Blue and white meeting stand", span: "md:col-span-2" },
+export type GalleryItem = {
+  src: string;
+  alt: string;
+};
+
+export type GalleryCategory = {
+  id: string;
+  title: string;
+  accent: string;
+  description: string;
+  items: GalleryItem[];
+};
+
+export const galleryCategories: GalleryCategory[] = [
+  {
+    id: "exhibitions",
+    title: "Exhibitions",
+    accent: "Built",
+    description:
+      "Custom pavilions, brand stands, and destination environments — designed as architecture, not backdrop.",
+    items: [
+      { src: "/gallery/Exhibitions/Exhibition.jpg", alt: "Flagship exhibition pavilion" },
+      { src: "/gallery/Exhibitions/mzLiberec.jpeg", alt: "Exhibition pavilion in Liberec" },
+      { src: "/gallery/Exhibitions/img4.jpeg", alt: "Exhibition environment" },
+      { src: "/gallery/Exhibitions/gal1.jpeg", alt: "Immersive exhibition stand" },
+      { src: "/gallery/Exhibitions/gal2.jpeg", alt: "Exhibition interior" },
+      { src: "/gallery/Exhibitions/gal3.jpeg", alt: "Product display stand" },
+      { src: "/gallery/Exhibitions/gal4.jpeg", alt: "Experience zone" },
+      { src: "/gallery/Exhibitions/gal8.jpeg", alt: "Night exhibition activation" },
+      { src: "/gallery/Exhibitions/gal9.jpeg", alt: "Audience moment on the stand" },
+      { src: "/gallery/Exhibitions/gal10.jpeg", alt: "Stage lighting in hall" },
+      { src: "/gallery/Exhibitions/imeg_1.jpeg", alt: "Carousel pavilion" },
+      { src: "/gallery/Exhibitions/imeg_2.jpeg", alt: "Architectural stand with timber canopy" },
+      { src: "/gallery/Exhibitions/imeg_3.jpg", alt: "Aumsh Ventures product booth" },
+      { src: "/gallery/Exhibitions/imeg_4.jpg", alt: "Technical exhibition counter" },
+      { src: "/gallery/Exhibitions/imeg_5.jpg", alt: "Blue and white meeting stand" },
+      { src: "/gallery/Exhibitions/imagecons.png", alt: "Exhibition construction fit-out" },
+      { src: "/gallery/Exhibitions/imgcons2.png", alt: "On-site exhibition build" },
+      { src: "/gallery/Exhibitions/ledwall.webp", alt: "LED wall installation" },
+      { src: "/gallery/Exhibitions/43617.jpg", alt: "Exhibition installation" },
+      { src: "/gallery/Exhibitions/43619.jpg", alt: "Exhibition visitor environment" },
+      { src: "/gallery/Exhibitions/43620.jpg", alt: "Exhibition brand space" },
+    ],
+  },
+  {
+    id: "kiosks",
+    title: "Kiosks",
+    accent: "Precise",
+    description:
+      "Compact retail and brand kiosks engineered for traffic, product focus, and a finished presence in the aisle.",
+    items: [
+      { src: "/gallery/Kiosks/IQAIR.jpeg", alt: "IQAir brand kiosk" },
+      { src: "/gallery/Kiosks/img3.jpeg", alt: "Brand kiosk installation" },
+      { src: "/gallery/Kiosks/43646.jpg", alt: "Custom kiosk facade" },
+      { src: "/gallery/Kiosks/43647.jpg", alt: "Retail kiosk interior" },
+      { src: "/gallery/Kiosks/43648.jpg", alt: "Interactive kiosk counter" },
+      { src: "/gallery/Kiosks/43649.jpg", alt: "Kiosk lighting and graphics" },
+      { src: "/gallery/Kiosks/43650.jpg", alt: "Finished kiosk activation" },
+    ],
+  },
+  {
+    id: "live-events",
+    title: "Live Events",
+    accent: "Staged",
+    description:
+      "Productions for rooms that have to work live — staging, aerial spectacle, and atmospheres built for a crowd.",
+    items: [
+      { src: "/gallery/LiveEvents/droneshow.jpg", alt: "Drone show over venue" },
+      { src: "/gallery/LiveEvents/1122.png", alt: "Live event stage" },
+      { src: "/gallery/LiveEvents/1111.png", alt: "Live event audience environment" },
+      { src: "/gallery/LiveEvents/43.png", alt: "Event lighting and staging" },
+      { src: "/gallery/LiveEvents/55.png", alt: "Live production moment" },
+    ],
+  },
+  {
+    id: "esports",
+    title: "eSports",
+    accent: "Broadcast",
+    description:
+      "Competition floors, grandstands, and LED arenas shaped for play, cameras, and the energy of a live bracket.",
+    items: [
+      { src: "/gallery/ESports/esportstage.jpg", alt: "eSports tournament stage" },
+      { src: "/gallery/ESports/1111.png", alt: "eSports arena seating" },
+      { src: "/gallery/ESports/22.png", alt: "Competition floor" },
+      { src: "/gallery/ESports/33.png", alt: "Broadcast-ready eSports set" },
+      { src: "/gallery/ESports/44.png", alt: "Fan zone and LED environment" },
+    ],
+  },
 ];
 
 export const contact = {
