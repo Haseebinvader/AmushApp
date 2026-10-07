@@ -215,7 +215,6 @@ export const galleryCategories: GalleryCategory[] = [
     items: [
       { src: "/gallery/Kiosks/IQAIR.jpeg", alt: "IQAir brand kiosk" },
       { src: "/gallery/Kiosks/img3.jpeg", alt: "Brand kiosk installation" },
-      { src: "/gallery/Kiosks/43646.jpg", alt: "Custom kiosk facade" },
       { src: "/gallery/Kiosks/43647.jpg", alt: "Retail kiosk interior" },
       { src: "/gallery/Kiosks/43648.jpg", alt: "Interactive kiosk counter" },
       { src: "/gallery/Kiosks/43649.jpg", alt: "Kiosk lighting and graphics" },
@@ -244,8 +243,15 @@ export const galleryCategories: GalleryCategory[] = [
       "Competition floors, grandstands, and LED arenas shaped for play, cameras, and the energy of a live bracket.",
     items: [
       { src: "/gallery/ESports/esportstage.jpg", alt: "eSports tournament stage" },
+      { src: "/gallery/ESports/332211.jpg", alt: "eSports tournament stage" },
+      { src: "/gallery/ESports/112233.jpg", alt: "eSports tournament stage" },
+      { src: "/gallery/ESports/221122.jpg", alt: "eSports tournament stage" },
+      { src: "/gallery/ESports/554345.jpg", alt: "eSports tournament stage" },
+      { src: "/gallery/ESports/777888.jpg", alt: "eSports tournament stage" },
+      { src: "/gallery/ESports/88888.jpg", alt: "eSports tournament stage" },
       { src: "/gallery/ESports/1111.png", alt: "eSports arena seating" },
       { src: "/gallery/ESports/22.png", alt: "Competition floor" },
+      { src: "/gallery/ESports/666555.jpg", alt: "Competition floor" },
       { src: "/gallery/ESports/33.png", alt: "Broadcast-ready eSports set" },
       { src: "/gallery/ESports/44.png", alt: "Fan zone and LED environment" },
     ],
