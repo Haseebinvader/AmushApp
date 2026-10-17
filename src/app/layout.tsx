@@ -4,6 +4,7 @@ import "./globals.css";
 import { company } from "@/content/site";
 import Preloader from "@/components/Preloader";
 import SiteShell from "@/components/layout/SiteShell";
+import { Analytics } from "@vercel/analytics/next";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Preloader />
         <SiteShell>{children}</SiteShell>
+        <Analytics />
       </body>
     </html>
   );
