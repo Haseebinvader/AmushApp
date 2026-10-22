@@ -26,30 +26,34 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="md:col-span-3">
-          <p className="text-[11px] tracking-[0.22em] uppercase text-white/40">Navigate</p>
-          <div className="mt-5 flex flex-col gap-3">
-            {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-[15px] text-white/75 transition-colors hover:text-white"
-              >
-                {item.label}
-              </Link>
-            ))}
+        <div className="grid grid-cols-2 gap-8 md:col-span-3">
+          <div>
+            <p className="text-[11px] tracking-[0.22em] uppercase text-white/40">Navigate</p>
+            <div className="mt-5 flex flex-col gap-3">
+              {nav.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-[15px] text-white/75 transition-colors hover:text-white"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </div>
-          <p className="mt-10 text-[11px] tracking-[0.22em] uppercase text-white/40">Services</p>
-          <div className="mt-5 flex flex-col gap-3">
-            {services.map((service) => (
-              <Link
-                key={service.id}
-                href={service.href}
-                className="text-[15px] text-white/75 transition-colors hover:text-white"
-              >
-                {service.title}
-              </Link>
-            ))}
+          <div>
+            <p className="text-[11px] tracking-[0.22em] uppercase text-white/40">Services</p>
+            <div className="mt-5 flex flex-col gap-3">
+              {services.map((service) => (
+                <Link
+                  key={service.id}
+                  href={service.href}
+                  className="text-[15px] text-white/75 transition-colors hover:text-white"
+                >
+                  {service.title}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
