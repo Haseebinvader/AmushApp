@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import Link from "next/link";
-import { company, contact, nav, social } from "@/content/site";
+import { company, contact, nav, services, social } from "@/content/site";
 import BrandMark from "../ui/BrandMark";
 
 export default function Footer() {
@@ -36,6 +36,18 @@ export default function Footer() {
                 className="text-[15px] text-white/75 transition-colors hover:text-white"
               >
                 {item.label}
+              </Link>
+            ))}
+          </div>
+          <p className="mt-10 text-[11px] tracking-[0.22em] uppercase text-white/40">Services</p>
+          <div className="mt-5 flex flex-col gap-3">
+            {services.map((service) => (
+              <Link
+                key={service.id}
+                href={service.href}
+                className="text-[15px] text-white/75 transition-colors hover:text-white"
+              >
+                {service.title}
               </Link>
             ))}
           </div>

@@ -16,7 +16,7 @@ export default function HomeStory() {
           <div className="group relative aspect-[4/5] overflow-hidden bg-[var(--cream-deep)]">
             <Image
               src="/gallery/Exhibitions/gal4.jpeg"
-              alt="Aumsh studio and production"
+              alt="Exhibition experience designed by Aumsh Ventures"
               fill
               className="img-zoom object-cover"
               sizes="(max-width: 1024px) 100vw, 42vw"

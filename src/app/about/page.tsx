@@ -1,18 +1,27 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { company, stats, values } from "@/content/site";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import HomeCta from "@/components/home/HomeCta";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Our Story",
-  description: company.storyLong,
-};
+  description:
+    "Aumsh Ventures is a Dubai production studio for exhibitions, live events, eSports arenas, and drone shows, with 500+ projects across 10+ countries.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Our Story", path: "/about" },
+        ])}
+      />
       <PageHero
         eyebrow="Our Story"
         title="A studio built"
@@ -25,7 +34,7 @@ export default function AboutPage() {
           <div className="relative aspect-[16/9] overflow-hidden bg-[var(--cream-deep)]">
             <Image
               src="/gallery/Exhibitions/Exhibition.jpg"
-              alt="Aumsh exhibition environment"
+              alt="Flagship exhibition pavilion designed by Aumsh Ventures"
               fill
               className="object-cover"
               sizes="100vw"

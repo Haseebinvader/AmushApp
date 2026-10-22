@@ -1,16 +1,25 @@
-import type { Metadata } from "next";
 import { contact } from "@/content/site";
 import PageHero from "@/components/ui/PageHero";
 import HangingContactCard from "@/components/contact/HangingContactCard";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Stay in Touch",
-  description: "Start a project with Aumsh Ventures in Dubai.",
-};
+export const metadata = pageMetadata({
+  title: "Contact",
+  description:
+    "Start an exhibition, event, or activation with Aumsh Ventures. Studio at Meydan Grandstand, Dubai. Call +971 55 944 8903.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ])}
+      />
       <PageHero
         eyebrow="Stay in Touch"
         title="Tell us about"

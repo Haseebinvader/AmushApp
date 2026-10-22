@@ -1,19 +1,29 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { company, process, services } from "@/content/site";
+import { process, services } from "@/content/site";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import HomeCta from "@/components/home/HomeCta";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbJsonLd, pageMetadata, servicesJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services",
-  description: company.shortDescription,
-};
+export const metadata = pageMetadata({
+  title: "Exhibition, Event & eSports Production",
+  description:
+    "Custom exhibition stands, live event production, eSports staging, LED and interactive technology, and choreographed drone shows from Aumsh Ventures in Dubai.",
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd data={servicesJsonLd()} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/services" },
+        ])}
+      />
       <PageHero
         eyebrow="Services"
         title="Five practices."
@@ -35,7 +45,7 @@ export default function ServicesPage() {
                   <div className="group relative aspect-[16/10] overflow-hidden bg-[var(--cream-deep)]">
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={service.imageAlt}
                       fill
                       className="img-zoom object-cover"
                       sizes="(max-width: 1024px) 100vw, 58vw"
@@ -52,12 +62,20 @@ export default function ServicesPage() {
                   <p className="mt-6 text-[17px] leading-8 text-[var(--ink-soft)]">
                     {service.longDescription}
                   </p>
-                  <Link
-                    href="/contact"
-                    className="mt-8 inline-flex text-[11px] tracking-[0.18em] uppercase text-[var(--ink)] underline underline-offset-8"
-                  >
-                    Discuss this service
-                  </Link>
+                  <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+                    <Link
+                      href="/contact"
+                      className="inline-flex text-[11px] tracking-[0.18em] uppercase text-[var(--ink)] underline underline-offset-8"
+                    >
+                      Discuss this service
+                    </Link>
+                    <Link
+                      href={service.workHref}
+                      className="inline-flex text-[11px] tracking-[0.18em] uppercase text-[var(--muted)] underline underline-offset-8 hover:text-[var(--ink)]"
+                    >
+                      See the work
+                    </Link>
+                  </div>
                 </div>
               </article>
             );

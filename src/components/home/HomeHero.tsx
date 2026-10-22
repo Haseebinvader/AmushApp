@@ -44,7 +44,7 @@ export default function HomeHero() {
           <div className="group relative aspect-[4/5] overflow-hidden bg-[var(--cream-deep)] md:aspect-[5/4]">
             <Image
               src="/herohero.png"
-              alt="Aumsh Ventures production"
+              alt="Aumsh Ventures exhibition and live event production"
               fill
               priority
               className="img-zoom object-cover"

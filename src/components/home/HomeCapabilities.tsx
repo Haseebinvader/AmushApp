@@ -27,7 +27,7 @@ export default function HomeCapabilities() {
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {services.slice(0, 4).map((service) => (
+          {services.map((service) => (
             <Link
               key={service.id}
               href={service.href}
@@ -36,7 +36,7 @@ export default function HomeCapabilities() {
               <div className="relative aspect-[3/4] overflow-hidden bg-[var(--cream-deep)]">
                 <Image
                   src={service.image}
-                  alt={service.title}
+                  alt={service.imageAlt}
                   fill
                   className="img-zoom object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

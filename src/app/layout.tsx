@@ -4,6 +4,8 @@ import "./globals.css";
 import { company } from "@/content/site";
 import Preloader from "@/components/Preloader";
 import SiteShell from "@/components/layout/SiteShell";
+import JsonLd from "@/components/seo/JsonLd";
+import { ogImage, organizationJsonLd, siteUrl } from "@/lib/seo";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -20,17 +22,42 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: `${company.name} — Exhibitions & Events`,
+    default: `${company.name} — Exhibition & Event Production in Dubai`,
     template: `%s — ${company.name}`,
   },
   description: company.shortDescription,
-  openGraph: {
-    title: `${company.name} — Exhibitions & Events`,
-    description: company.shortDescription,
-    images: [{ url: "/herohero.png", width: 1200, height: 630, alt: company.name }],
+  applicationName: company.name,
+  authors: [{ name: company.name, url: siteUrl }],
+  creator: company.name,
+  category: "Event production",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
-  metadataBase: new URL("https://aumsh.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_AE",
+    siteName: company.name,
+    title: `${company.name} — Exhibition & Event Production in Dubai`,
+    description: company.shortDescription,
+    url: siteUrl,
+    images: [ogImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${company.name} — Exhibition & Event Production in Dubai`,
+    description: company.shortDescription,
+    images: [ogImage.url],
+  },
 };
 
 export const viewport: Viewport = {
@@ -45,6 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${outfit.variable} ${cormorant.variable}`}>
       <body className="antialiased">
+        <JsonLd data={organizationJsonLd()} />
         <Preloader />
         <SiteShell>{children}</SiteShell>
       </body>

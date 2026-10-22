@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import WhatsAppWidget from "@/components/contact/WhatsAppWidget";
 
 export default function SiteShell({ children }: { children: React.ReactNode }) {
   return (
@@ -7,6 +8,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
       <Header />
       <main>{children}</main>
       <Footer />
+      <WhatsAppWidget />
     </div>
   );
 }
