@@ -18,12 +18,20 @@ export default function HomeCapabilities() {
             title="Capabilities"
             description="Where movement of people, brands, and ideas come together."
           />
-          <Link
-            href="/services"
-            className="text-[11px] tracking-[0.18em] uppercase text-[var(--ink)] underline underline-offset-8 decoration-[var(--line-strong)] hover:decoration-[var(--ink)]"
-          >
-            View all services
-          </Link>
+          <div className="flex flex-wrap gap-x-8 gap-y-3">
+            <Link
+              href="/preview"
+              className="text-[11px] tracking-[0.18em] uppercase text-[var(--ink)] underline underline-offset-8 decoration-[var(--line-strong)] hover:decoration-[var(--ink)]"
+            >
+              Preview in 3D
+            </Link>
+            <Link
+              href="/services"
+              className="text-[11px] tracking-[0.18em] uppercase text-[var(--ink)] underline underline-offset-8 decoration-[var(--line-strong)] hover:decoration-[var(--ink)]"
+            >
+              View all services
+            </Link>
+          </div>
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

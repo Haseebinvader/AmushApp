@@ -31,6 +31,20 @@ export default function ServicesPage() {
         description="Exhibition, live event, eSports, technology, and aerial work — designed and delivered as a single experience."
       />
 
+      <div className="px-5 md:px-10">
+        <div className="mx-auto mb-16 flex max-w-[1440px] flex-wrap items-center justify-between gap-4 border-y border-[var(--line)] py-5">
+          <p className="text-[15px] leading-7 text-[var(--muted)]">
+            Preview a booth, stage, or arena before the first meeting.
+          </p>
+          <Link
+            href="/preview"
+            className="text-[11px] tracking-[0.18em] uppercase text-[var(--ink)] underline underline-offset-8"
+          >
+            Open the 3D preview
+          </Link>
+        </div>
+      </div>
+
       <section className="px-5 pb-8 md:px-10">
         <div className="mx-auto max-w-[1440px] space-y-20 md:space-y-28">
           {services.map((service, index) => {

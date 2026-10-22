@@ -49,7 +49,7 @@ export default function Header() {
             />
           </Link>
 
-          <nav className="hidden h-[88px] items-center gap-9 lg:flex md:h-[96px]" aria-label="Primary">
+          <nav className="hidden h-[88px] items-center gap-6 lg:flex md:h-[96px] xl:gap-8" aria-label="Primary">
             {nav.map((item) => {
               const active =
                 item.href === "/"
