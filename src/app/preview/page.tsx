@@ -6,7 +6,7 @@ import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "3D Booth & Stage Preview",
   description:
-    "Explore a sample exhibition booth, event stage, or eSports arena in 3D. Rotate the design, switch lighting and screens, and request a custom concept from Aumsh Ventures.",
+    "Explore a basic exhibition stand, meeting pavilion, island build, event stage, or eSports arena in 3D, then request a custom concept from Aumsh Ventures.",
   path: "/preview",
 });
 
@@ -23,7 +23,7 @@ export default function PreviewPage() {
         eyebrow="Preview"
         title="Walk the"
         italic="room first."
-        description="Rotate a sample exhibition booth, event stage, or eSports arena. Change the lighting, the layout, and where the brand and screens sit, then send that concept to the studio."
+        description="Start with a basic stand — flooring, back wall, reception, meeting tables, header logos, graphics, and one TV — then open the pavilion, island, stage, and arena layouts drawn from the studio’s work."
       />
       <PreviewStudio />
     </>
