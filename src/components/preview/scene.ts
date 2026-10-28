@@ -215,8 +215,7 @@ function buildBasic(
   addTv(group, 1.5, 0.86, 1.3, floorY + 1.42, -2.33, 0, options.screens, screenMap);
   addGraphic(group, 1.05, 1.25, 2.86, floorY + 1.28, -1.7, Math.PI / 2, graphicMap);
 
-  addFrontFascia(group, 6.0, 2.32, floorY, options.brandColor, brandMap);
-  addReception(group, -1.85, floorY, 1.2, options.brandColor, 0, brandMap);
+  addReception(group, -1.85, floorY, 2.22, options.brandColor, 0, brandMap);
   addMeetingTable(group, -0.05, floorY, -0.05, 0);
   addMeetingTable(group, 1.75, floorY, 1.25, 0.25);
 }
@@ -240,8 +239,7 @@ function buildPavilion(
   addGraphic(group, 1.55, 1.85, 3.3, floorY + 1.45, 0.45, Math.PI / 2, graphicMap);
   addLogoSign(group, 0.72, 1.55, -3.05, floorY + 1.85, 2.15, 0, options.brandColor, brandMap);
 
-  addFrontFascia(group, 6.5, 2.55, floorY, options.brandColor, brandMap);
-  addReception(group, -2.15, floorY, 1.45, options.brandColor, 0, brandMap);
+  addReception(group, -2.15, floorY, 2.72, options.brandColor, 0, brandMap);
   addMeetingTable(group, -0.2, floorY, -0.25, 0);
   addMeetingTable(group, 1.55, floorY, 0.7, 0.2);
 }
@@ -293,8 +291,6 @@ function buildStage(
   addLogoSign(group, 2.4, 0.36, 0, concert ? 3.5 : 3.05, -2.72, 0, options.brandColor, brandMap);
   addGraphic(group, 0.85, 1.5, -3.55, 1.7, -2.72, 0, graphicMap);
   addGraphic(group, 0.85, 1.5, 3.55, 1.7, -2.72, 0, graphicMap);
-  addTruss(group, concert ? 3.85 : 3.4, 8.2, -0.45);
-
   if (conference) {
     addTv(group, 3.8, 1.55, 0, 1.85, -2.72, 0, options.screens, screenMap);
     const table = box(3.8, 0.08, 0.7, WHITE);
@@ -309,7 +305,6 @@ function buildStage(
     addTv(group, 3.4, 1.75, 0, 1.95, -2.72, 0, options.screens, screenMap);
     addScreen(group, 1.15, 1.9, -2.85, 1.7, -1.15, -0.45, options.screens, screenMap);
     addScreen(group, 1.15, 1.9, 2.85, 1.7, -1.15, 0.45, options.screens, screenMap);
-    [-1.7, 0, 1.7].forEach((x) => addLamp(group, x, 3.65, -0.45));
     addSeatBank(group, 3, 7, 0, 1.35, 0);
     return;
   }
@@ -434,22 +429,6 @@ function addBackdrop(
   const wall = box(width, height, 0.12, "#161314", { roughness: 0.8 });
   wall.position.set(x, y, z);
   group.add(wall);
-}
-
-function addFrontFascia(
-  group: THREE.Group,
-  span: number,
-  z: number,
-  floorY: number,
-  color: string,
-  brandMap: THREE.CanvasTexture | null
-) {
-  [-span / 2 + 0.06, span / 2 - 0.06].forEach((x) => {
-    const post = box(0.08, 2.75, 0.08, WHITE);
-    post.position.set(x, floorY + 1.375, z);
-    group.add(post);
-  });
-  addLogoSign(group, span - 0.16, 0.48, 0, floorY + 2.78, z, 0, color, brandMap);
 }
 
 function addLogoSign(
@@ -709,29 +688,6 @@ function addPlayerDesk(
   desk.position.set(x, floorY + 0.36, z);
   group.add(desk);
   addScreen(group, 0.62, 0.36, x, floorY + 0.92, z - 0.04, 0, screens, screenMap);
-}
-
-function addTruss(group: THREE.Group, y: number, span: number, z: number) {
-  const metal = { roughness: 0.32, metalness: 0.72 };
-  const beam = box(span, 0.08, 0.08, "#d9d0c6", metal);
-  beam.position.set(0, y, z);
-  group.add(beam);
-  [-span / 2 + 0.2, 0, span / 2 - 0.2].forEach((x) => {
-    const leg = box(0.07, y, 0.07, "#d9d0c6", metal);
-    leg.position.set(x, y / 2, z);
-    group.add(leg);
-  });
-}
-
-function addLamp(group: THREE.Group, x: number, y: number, z: number) {
-  const can = box(0.18, 0.22, 0.18, "#f3eee7", {
-    emissive: "#fff1d6",
-    emissiveIntensity: 0.8,
-    metalness: 0.4,
-    roughness: 0.3,
-  });
-  can.position.set(x, y, z);
-  group.add(can);
 }
 
 function addTv(
